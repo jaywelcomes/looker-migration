@@ -1,22 +1,21 @@
 # Auto-generated from Tableau data source: Orders
-# Connection class in Tableau was: unknown
 view: orders {
-  sql_table_name: `my-gcp-project-498623.tableau_migration.orders` ;;
+  sql_table_name: `my-gcp-project-498623.tableau_migration.Orders.csv` ;;
 
   measure: row_id {
-    # Tableau measure: Row ID (integer)
-    type: sum
+    label: "Row ID"
     sql: ${TABLE}.row_id ;;
+    type: sum
   }
 
   dimension: order_id {
-    # Tableau: Order ID (string)
-    type: string
+    label: "Order ID"
     sql: ${TABLE}.order_id ;;
+    type: string
   }
 
   dimension_group: order_date {
-    # Tableau: Order Date (date)
+    label: "Order Date"
     type: time
     timeframes: [raw, date, week, month, quarter, year]
     datatype: date
@@ -24,7 +23,7 @@ view: orders {
   }
 
   dimension_group: ship_date {
-    # Tableau: Ship Date (date)
+    label: "Ship Date"
     type: time
     timeframes: [raw, date, week, month, quarter, year]
     datatype: date
@@ -32,145 +31,145 @@ view: orders {
   }
 
   dimension: ship_mode {
-    # Tableau: Ship Mode (string)
-    type: string
+    label: "Ship Mode"
     sql: ${TABLE}.ship_mode ;;
+    type: string
   }
 
   dimension: customer_id {
-    # Tableau: Customer ID (string)
-    type: string
+    label: "Customer ID"
     sql: ${TABLE}.customer_id ;;
+    type: string
   }
 
   dimension: customer_name {
-    # Tableau: Customer Name (string)
-    type: string
+    label: "Customer Name"
     sql: ${TABLE}.customer_name ;;
+    type: string
   }
 
   dimension: segment {
-    # Tableau: Segment (string)
-    type: string
+    label: "Segment"
     sql: ${TABLE}.segment ;;
+    type: string
   }
 
   dimension: country {
-    # Tableau: Country (string)
-    type: string
+    label: "Country"
     sql: ${TABLE}.country ;;
+    type: string
   }
 
   dimension: city {
-    # Tableau: City (string)
-    type: string
+    label: "City"
     sql: ${TABLE}.city ;;
+    type: string
   }
 
   dimension: state {
-    # Tableau: State (string)
-    type: string
+    label: "State"
     sql: ${TABLE}.state ;;
+    type: string
   }
 
   measure: postal_code {
-    # Tableau measure: Postal Code (integer)
-    type: sum
+    label: "Postal Code"
     sql: ${TABLE}.postal_code ;;
+    type: sum
   }
 
   dimension: region {
-    # Tableau: Region (string)
-    type: string
+    label: "Region"
     sql: ${TABLE}.region ;;
+    type: string
   }
 
   dimension: product_id {
-    # Tableau: Product ID (string)
-    type: string
+    label: "Product ID"
     sql: ${TABLE}.product_id ;;
+    type: string
   }
 
   dimension: category {
-    # Tableau: Category (string)
-    type: string
+    label: "Category"
     sql: ${TABLE}.category ;;
+    type: string
   }
 
   dimension: sub_category {
-    # Tableau: Sub-Category (string)
-    type: string
+    label: "Sub-Category"
     sql: ${TABLE}.sub_category ;;
+    type: string
   }
 
   dimension: product_name {
-    # Tableau: Product Name (string)
-    type: string
+    label: "Product Name"
     sql: ${TABLE}.product_name ;;
+    type: string
   }
 
   measure: sales {
-    # Tableau measure: Sales (real)
-    type: sum
+    label: "Sales"
     sql: ${TABLE}.sales ;;
+    type: sum
   }
 
   measure: quantity {
-    # Tableau measure: Quantity (integer)
-    type: sum
+    label: "Quantity"
     sql: ${TABLE}.quantity ;;
+    type: sum
   }
 
   measure: discount {
-    # Tableau measure: Discount (real)
-    type: sum
+    label: "Discount"
     sql: ${TABLE}.discount ;;
+    type: sum
   }
 
   measure: profit {
-    # Tableau measure: Profit (real)
-    type: sum
+    label: "Profit"
     sql: ${TABLE}.profit ;;
+    type: sum
   }
 
   dimension: regional_manager {
-    # Tableau: Regional Manager (string)
-    type: string
+    label: "Regional Manager"
     sql: ${TABLE}.regional_manager ;;
+    type: string
   }
 
   dimension: region {
-    # Tableau: Region (string)
-    type: string
+    label: "Region"
     sql: ${TABLE}.region ;;
+    type: string
   }
 
   dimension: order_id {
-    # Tableau: Order ID (string)
-    type: string
+    label: "Order ID"
     sql: ${TABLE}.order_id ;;
+    type: string
   }
 
   dimension: returned {
-    # Tableau: Returned (string)
-    type: string
+    label: "Returned"
     sql: ${TABLE}.returned ;;
+    type: string
   }
 
   measure: row_id {
-    # Tableau measure: Row ID (integer)
-    type: sum
+    label: "Row ID"
     sql: ${TABLE}.row_id ;;
+    type: sum
   }
 
   dimension: order_id {
-    # Tableau: Order ID (string)
-    type: string
+    label: "Order ID"
     sql: ${TABLE}.order_id ;;
+    type: string
   }
 
   dimension_group: order_date {
-    # Tableau: Order Date (date)
+    label: "Order Date"
     type: time
     timeframes: [raw, date, week, month, quarter, year]
     datatype: date
@@ -178,7 +177,7 @@ view: orders {
   }
 
   dimension_group: ship_date {
-    # Tableau: Ship Date (date)
+    label: "Ship Date"
     type: time
     timeframes: [raw, date, week, month, quarter, year]
     datatype: date
@@ -186,145 +185,141 @@ view: orders {
   }
 
   dimension: ship_mode {
-    # Tableau: Ship Mode (string)
-    type: string
+    label: "Ship Mode"
     sql: ${TABLE}.ship_mode ;;
+    type: string
   }
 
   dimension: customer_id {
-    # Tableau: Customer ID (string)
-    type: string
+    label: "Customer ID"
     sql: ${TABLE}.customer_id ;;
+    type: string
   }
 
   dimension: customer_name {
-    # Tableau: Customer Name (string)
-    type: string
+    label: "Customer Name"
     sql: ${TABLE}.customer_name ;;
+    type: string
   }
 
   dimension: segment {
-    # Tableau: Segment (string)
-    type: string
+    label: "Segment"
     sql: ${TABLE}.segment ;;
+    type: string
   }
 
   dimension: country {
-    # Tableau: Country (string)
-    type: string
+    label: "Country"
     sql: ${TABLE}.country ;;
+    type: string
   }
 
   dimension: city {
-    # Tableau: City (string)
-    type: string
+    label: "City"
     sql: ${TABLE}.city ;;
+    type: string
   }
 
   dimension: state {
-    # Tableau: State (string)
-    type: string
+    label: "State"
     sql: ${TABLE}.state ;;
+    type: string
   }
 
   measure: postal_code {
-    # Tableau measure: Postal Code (integer)
-    type: sum
+    label: "Postal Code"
     sql: ${TABLE}.postal_code ;;
+    type: sum
   }
 
   dimension: region {
-    # Tableau: Region (string)
-    type: string
+    label: "Region"
     sql: ${TABLE}.region ;;
+    type: string
   }
 
   dimension: product_id {
-    # Tableau: Product ID (string)
-    type: string
+    label: "Product ID"
     sql: ${TABLE}.product_id ;;
+    type: string
   }
 
   dimension: category {
-    # Tableau: Category (string)
-    type: string
+    label: "Category"
     sql: ${TABLE}.category ;;
+    type: string
   }
 
   dimension: sub_category {
-    # Tableau: Sub-Category (string)
-    type: string
+    label: "Sub-Category"
     sql: ${TABLE}.sub_category ;;
+    type: string
   }
 
   dimension: product_name {
-    # Tableau: Product Name (string)
-    type: string
+    label: "Product Name"
     sql: ${TABLE}.product_name ;;
+    type: string
   }
 
   measure: sales {
-    # Tableau measure: Sales (real)
-    type: sum
+    label: "Sales"
     sql: ${TABLE}.sales ;;
+    type: sum
   }
 
   measure: quantity {
-    # Tableau measure: Quantity (integer)
-    type: sum
+    label: "Quantity"
     sql: ${TABLE}.quantity ;;
+    type: sum
   }
 
   measure: discount {
-    # Tableau measure: Discount (real)
-    type: sum
+    label: "Discount"
     sql: ${TABLE}.discount ;;
+    type: sum
   }
 
   measure: profit {
-    # Tableau measure: Profit (real)
-    type: sum
+    label: "Profit"
     sql: ${TABLE}.profit ;;
+    type: sum
   }
 
   dimension: regional_manager {
-    # Tableau: Regional Manager (string)
-    type: string
+    label: "Regional Manager"
     sql: ${TABLE}.regional_manager ;;
+    type: string
   }
 
   dimension: region {
-    # Tableau: Region (string)
-    type: string
+    label: "Region"
     sql: ${TABLE}.region ;;
+    type: string
   }
 
   dimension: order_id {
-    # Tableau: Order ID (string)
-    type: string
+    label: "Order ID"
     sql: ${TABLE}.order_id ;;
+    type: string
   }
 
   dimension: returned {
-    # Tableau: Returned (string)
-    type: string
+    label: "Returned"
     sql: ${TABLE}.returned ;;
+    type: string
   }
 
   dimension: year {
-    # CALCULATED FIELD — original Tableau formula below.
-    # Tableau: Year([Order Date])
-    # TODO: translate the formula above into BigQuery SQL.
+    label: "Year"
+    sql: Year(Order Date) ;;
     type: number
-    sql: ${TABLE}.year ;; # placeholder
   }
 
   dimension: month {
-    # CALCULATED FIELD — original Tableau formula below.
-    # Tableau: Month([Order Date])
-    # TODO: translate the formula above into BigQuery SQL.
+    label: "Month"
+    sql: Month(Order Date) ;;
     type: number
-    sql: ${TABLE}.month ;; # placeholder
   }
 
   measure: count {
