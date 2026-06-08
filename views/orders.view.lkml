@@ -4,16 +4,42 @@
 view: orders {
   sql_table_name: `my-gcp-project-498623.tableau_migration.orders` ;;
 
-  dimension: month {
-    # CALCULATED FIELD — original Tableau formula below.
-    # Tableau: Month([Order Date])
-    # TODO: translate the formula above into BigQuery SQL.
+  dimension: row_id {
     type: number
-    sql: ${TABLE}.month ;; # placeholder
+    sql: ${TABLE}."Row ID" ;;
+  }
+
+  dimension: order_id {
+    type: string
+    sql: ${TABLE}."Order ID" ;;
+  }
+
+  dimension: order_date {
+    type: date
+    sql: ${TABLE}."Order Date" ;;
+  }
+
+  dimension: ship_date {
+    type: date
+    sql: ${TABLE}."Ship Date" ;;
+  }
+
+  dimension: ship_mode {
+    type: string
+    sql: ${TABLE}."Ship Mode" ;;
+  }
+
+  dimension: customer_id {
+    type: string
+    sql: ${TABLE}."Customer ID" ;;
+  }
+
+  dimension: customer_name {
+    type: string
+    sql: ${TABLE}."Customer Name" ;;
   }
 
   measure: count {
     type: count
-    drill_fields: []
   }
 }
