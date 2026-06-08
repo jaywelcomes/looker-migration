@@ -14,15 +14,19 @@ view: orders {
     sql: ${TABLE}.`Order ID` ;;
   }
 
+
   dimension: order_date {
     type: date
     sql: ${TABLE}.`Order Date` ;;
+    convert_tz: no
   }
 
   dimension: ship_date {
     type: date
     sql: ${TABLE}.`Ship Date` ;;
+    convert_tz: no
   }
+
 
   dimension: ship_mode {
     type: string
