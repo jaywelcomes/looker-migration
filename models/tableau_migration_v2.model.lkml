@@ -3,10 +3,14 @@
 connection: "bq_tableau_migration"
 
 # Pull in every generated view.
+
 include: "/views/*.view.lkml"
 
 explore: orders {
   label: "Orders"
+
+
+}
 
   # Joins detected in the Tableau workbook:
   #   relationship ON [].[Region] = [].[Region (People.csv)]
@@ -20,5 +24,4 @@ explore: orders {
   #   type: left_outer
   #   relationship: many_to_one
   #   sql_on: [].[Order ID] = [].[Order ID (Returns.csv)] ;;
-  # }
-}
+  #
