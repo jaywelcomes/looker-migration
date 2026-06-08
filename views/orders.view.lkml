@@ -6,37 +6,37 @@ view: orders {
 
   dimension: row_id {
     type: number
-    sql: ${TABLE}."Row ID" ;;
+    sql: ${TABLE}.`Row ID` ;;
   }
 
   dimension: order_id {
     type: string
-    sql: ${TABLE}."Order ID" ;;
+    sql: ${TABLE}.`Order ID` ;;
   }
 
   dimension: order_date {
     type: date
-    sql: ${TABLE}."Order Date" ;;
+    sql: ${TABLE}.`Order Date` ;;
   }
 
   dimension: ship_date {
     type: date
-    sql: ${TABLE}."Ship Date" ;;
+    sql: ${TABLE}.`Ship Date` ;;
   }
 
   dimension: ship_mode {
     type: string
-    sql: ${TABLE}."Ship Mode" ;;
+    sql: ${TABLE}.`Ship Mode` ;;
   }
 
   dimension: customer_id {
     type: string
-    sql: ${TABLE}."Customer ID" ;;
+    sql: ${TABLE}.`Customer ID` ;;
   }
 
   dimension: customer_name {
     type: string
-    sql: ${TABLE}."Customer Name" ;;
+    sql: ${TABLE}.`Customer Name` ;;
   }
 
   measure: count {
