@@ -1,4 +1,4 @@
-# generated at 1781026171.5966206
+# generated at 1781029258.3768907
 # Auto-generated model. Source file: C:\Users\jsubrama\Downloads\Looker\Tableautolooker.twbx
 connection: "bq_tableau_migration"
 
