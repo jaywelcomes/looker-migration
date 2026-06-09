@@ -1,4 +1,4 @@
-# generated at 1781006705.6614428
+# generated at 1781024795.498165
 # Auto-generated from Tableau data source: Orders
 # Connection class in Tableau was: unknown
 view: orders {
