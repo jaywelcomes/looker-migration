@@ -2,7 +2,7 @@
 # Auto-generated from Tableau data source: Orders
 # Connection class in Tableau was: excel
 view: orders {
-  sql_table_name: `tableau_migration.orders` ;;
+  sql_table_name: `june10demo.tableau_migration.orders` ;;
   label: "Orders"
 
   measure: row_id {

@@ -2,7 +2,7 @@
 # Auto-generated from Tableau data source: People
 # Connection class in Tableau was: excel
 view: people {
-  sql_table_name: `tableau_migration.people` ;;
+  sql_table_name: `june10demo.tableau_migration.people` ;;
   label: "People"
 
   dimension: regional_manager {

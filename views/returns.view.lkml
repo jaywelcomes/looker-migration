@@ -2,7 +2,7 @@
 # Auto-generated from Tableau data source: Returns
 # Connection class in Tableau was: excel
 view: returns {
-  sql_table_name: `tableau_migration.returns` ;;
+  sql_table_name: `june10demo.tableau_migration.returns` ;;
   label: "Returns"
 
   dimension: order_id {
