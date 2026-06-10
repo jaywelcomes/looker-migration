@@ -1,4 +1,4 @@
-# generated at 1781110942.086917
+# generated at 1781111709.659068
 # Auto-generated from Tableau data source: Sample - Superstore
 # Connection class in Tableau was: unknown
 view: sample_superstore {
