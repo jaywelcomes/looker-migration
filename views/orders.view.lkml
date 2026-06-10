@@ -1,15 +1,13 @@
-# generated at 1781029258.3746068
+# generated at 1781114650.1019378
 # Auto-generated from Tableau data source: Orders
-# Connection class in Tableau was: unknown
+# Connection class in Tableau was: excel
 view: orders {
   sql_table_name: `my-gcp-project-498623.tableau_migration.orders` ;;
 
-  dimension: month {
-    # CALCULATED FIELD — original Tableau formula below.
-    # Tableau: Month([Order Date])
-    # TODO: translate the formula above into BigQuery SQL.
-    type: number
-    sql: ${TABLE}.month ;; # placeholder
+  measure: profit {
+    # Tableau measure: Profit (real)
+    type: sum
+    sql: ${TABLE}.profit ;;
   }
 
   measure: count {
