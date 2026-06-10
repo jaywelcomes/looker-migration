@@ -1,10 +1,18 @@
-# generated at 1781114650.1053886
+# generated at 1781115399.9664779
 # Auto-generated from Tableau data source: Returns
 # Connection class in Tableau was: excel
 view: returns {
-  sql_table_name: `my-gcp-project-498623.tableau_migration.returns` ;;
+  sql_table_name: `tableau_migration.returns` ;;
+  label: "Returns"
 
+  dimension: order_id {
+    label: "Order ID"
+    # Tableau: Order ID (string)
+    type: string
+    sql: ${TABLE}.order_id ;;
+  }
   dimension: returned {
+    label: "Returned"
     # Tableau: Returned (boolean)
     type: yesno
     sql: ${TABLE}.returned ;;
