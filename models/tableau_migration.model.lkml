@@ -4,7 +4,7 @@ connection: "bq_tableau_migration"
 
 # Pull in every generated view.
 include: "/views/*.view.lkml"
-
+include: "/dashboards/*.dashboard"
 
 explore: orders {
   label: "Orders"
