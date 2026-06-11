@@ -1,4 +1,4 @@
-# generated at 1781142977.9732099
+# generated at 1781143398.7666469
 # Auto-generated from Tableau data source: Returns
 # Connection class in Tableau was: excel
 view: returns {
