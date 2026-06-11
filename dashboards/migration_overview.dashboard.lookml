@@ -5,7 +5,7 @@
   dashboard_filters:
     - name: year
       title: Select Year
-      model: tableau_migration
+      model: tableau_migration_july11
       explore: orders
       field: orders.order_date_year
     - name: month
