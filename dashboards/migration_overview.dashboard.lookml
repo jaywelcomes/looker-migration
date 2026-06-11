@@ -10,7 +10,7 @@
       field: orders.order_date_year
     - name: month
       title: Month
-      model: tableau_migration
+      model: tableau_migration_july11
       explore: orders
       field: orders.order_date_month
     - name: order_date_year
@@ -24,7 +24,7 @@
   # KPI row (Profit / Quantity / Sales / Trend)
   - title: Profit
     name: kpi_profit
-    model: tableau_migration
+    model: tableau_migration_july11
     explore: orders
     type: single_value
     fields: [orders.profit]
@@ -35,7 +35,7 @@
 
   - title: Quantity Sold
     name: kpi_quantity
-    model: tableau_migration
+    model: tableau_migration_july11
     explore: orders
     type: single_value
     fields: [orders.quantity]
@@ -46,7 +46,7 @@
 
   - title: Sales
     name: kpi_sales
-    model: tableau_migration
+    model: tableau_migration_july11
     explore: orders
     type: single_value
     fields: [orders.sales]
@@ -57,7 +57,7 @@
 
   - title: Sales Trend
     name: trend_sales
-    model: tableau_migration
+    model: tableau_migration_july11
     explore: orders
     type: line
     fields: [orders.order_date_month, orders.sales]
@@ -69,7 +69,7 @@
   # Middle row: Profit by Month (line) | Sales by Month (column)
   - title: Profit by Month
     name: profit_by_month
-    model: tableau_migration
+    model: tableau_migration_july11
     explore: orders
     type: line
     fields: [orders.order_date_month, orders.profit]
@@ -80,7 +80,7 @@
 
   - title: Sales by Month
     name: sales_by_month
-    model: tableau_migration
+    model: tableau_migration_july11
     explore: orders
     type: column
     fields: [orders.order_date_month, orders.sales]
@@ -93,7 +93,7 @@
   # Bottom: Product table with Category / Sub-Category / Sales / Quantity / Profit
   - title: Product vs Sales Profit qty
     name: product_table
-    model: tableau_migration
+    model: tableau_migration_july11
     explore: orders
     type: table
     fields: [orders.category, orders.sub_category, orders.sales, orders.quantity, orders.profit]
@@ -103,7 +103,3 @@
     col: 0
     width: 12
     height: 9
-
-  # NOTE: This dashboard is an automated reconstruction. For pixel-perfect
-  # fidelity to a Tableau dashboard use the original .twb/.twbx file so
-  # chart positions, sizes and floating containers can be exactly mapped.
