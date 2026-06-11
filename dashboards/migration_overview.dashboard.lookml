@@ -15,7 +15,7 @@
       field: orders.order_date_month
     - name: order_date_year
       title: Order Date(Year)
-      model: tableau_migration
+      model: tableau_migration_july11
       explore: orders
       field: orders.order_date_year
 
