@@ -1,4 +1,4 @@
-# generated at 1781189502.8319836
+
 - dashboard: migration_overview
   title: "Sales Dashboard"
   layout: grid
@@ -102,4 +102,3 @@
     row: 9
     col: 0
     width: 12
-    height: 9
