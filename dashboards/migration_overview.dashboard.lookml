@@ -1,32 +1,83 @@
-# generated at 1781143182.9750068
+# generated at 1781143398.7736893
 - dashboard: migration_overview
-  title: "Migration Overview (auto-generated)"
+  title: "Migration Overview"
   layout: newspaper
   elements:
 
-  - title: Main chart
-    name: main_chart
+  - title: Sales by Category
+    name: sales_by_category
     model: tableau_migration
     explore: orders
     type: column
-    fields: [orders.order_id, orders.row_id]
-    sorts: [orders.row_id desc]
+    fields: [orders.category, orders.sales]
+    sorts: [orders.sales desc]
     limit: 500
     row: 0
     col: 0
-    width: 12
+    width: 6
     height: 6
 
-  - title: KPI
-    name: kpi_value
+  - title: Orders by Region
+    name: orders_by_region
+    model: tableau_migration
+    explore: orders
+    type: bar
+    fields: [orders.region, orders.row_id]
+    sorts: [orders.row_id desc]
+    limit: 500
+    row: 0
+    col: 6
+    width: 6
+    height: 6
+
+  - title: Total Sales
+    name: total_sales
+    model: tableau_migration
+    explore: orders
+    type: single_value
+    fields: [orders.sales]
+    row: 6
+    col: 0
+    width: 3
+    height: 3
+
+  - title: Total Orders
+    name: total_orders
     model: tableau_migration
     explore: orders
     type: single_value
     fields: [orders.row_id]
     row: 6
-    col: 0
-    width: 4
+    col: 3
+    width: 3
     height: 3
 
-  # NOTE: This dashboard is auto-generated from the first data source because
-  # the selected source file did not contain Tableau dashboard metadata.
+  - title: Discount by Category
+    name: discount_by_category
+    model: tableau_migration
+    explore: orders
+    type: bar
+    fields: [orders.category, orders.discount]
+    sorts: [orders.discount desc]
+    limit: 500
+    row: 6
+    col: 6
+    width: 6
+    height: 6
+
+  - title: Quantity by Sub-Category
+    name: quantity_by_sub_category
+    model: tableau_migration
+    explore: orders
+    type: bar
+    fields: [orders.sub_category, orders.quantity]
+    sorts: [orders.quantity desc]
+    limit: 500
+    row: 12
+    col: 0
+    width: 12
+    height: 6
+
+  # NOTE: This dashboard is an auto-generated approximation based on the
+  # Excel source fields, because the input file does not contain Tableau
+  # dashboard metadata.
