@@ -1,4 +1,3 @@
-# generated at 1781712710.629649
 - dashboard: migration_overview
   title: "Sales Dashboard"
   layout: grid
@@ -102,8 +101,3 @@
     row: 9
     col: 0
     width: 12
-    height: 9
-
-  # NOTE: This dashboard is an automated reconstruction. For pixel-perfect
-  # fidelity to a Tableau dashboard use the original .twb/.twbx file so
-  # chart positions, sizes and floating containers can be exactly mapped.
