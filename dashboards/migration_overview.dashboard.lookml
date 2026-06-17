@@ -1,7 +1,5 @@
-# force refresh
-# refresh
   dashboard: migration_overview
-  title: "Sales Dashboard"
+  title: "Sales Dashboard - June17 FINAL"
   layout: grid
   description: "June17 final version"
   dashboard_filters:
