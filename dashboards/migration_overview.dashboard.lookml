@@ -1,8 +1,9 @@
 # force refresh
 # refresh
-- dashboard: migration_overview
+  dashboard: migration_overview
   title: "Sales Dashboard"
   layout: grid
+  description: "June17 final version"
   dashboard_filters:
     - name: year
       title: Select Year
