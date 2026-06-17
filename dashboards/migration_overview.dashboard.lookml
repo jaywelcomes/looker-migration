@@ -1,4 +1,4 @@
-  dashboard: migration_overview
+  dashboard: migration_overview_june17
   title: "Sales Dashboard - June17 FINAL"
   layout: grid
   description: "June17 final version"
