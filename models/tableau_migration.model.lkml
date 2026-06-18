@@ -1,4 +1,4 @@
-# generated at 1781712710.6232758
+# generated at 1781747682.7721863
 # Auto-generated model. Source file: C:\Users\jsubrama\Downloads\Looker\Sample - Superstore.xls
 connection: "bq_tableau_migration"
 
