@@ -1,4 +1,4 @@
-view: marta_routes {
+view: MARTA_ROUTES {
 
   sql_table_name: CAP_RPT_DB.LOOKER.MARTA_ROUTES ;;
 

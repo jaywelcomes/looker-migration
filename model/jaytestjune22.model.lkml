@@ -7,7 +7,7 @@ explore: onstreet_bike {
   description: "Onstreetbike"
 }
 
-explore: marta_routes {
+explore: MARTA_ROUTES {
   description: "Routes insights"
 }
 
