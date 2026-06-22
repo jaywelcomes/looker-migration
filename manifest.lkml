@@ -1,1 +1,3 @@
-project_name: "june17"
+project_name: "jaytestjune22"
+
+new_lookml_runtime: yes
