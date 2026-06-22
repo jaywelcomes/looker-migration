@@ -1,6 +1,7 @@
 view: marta_routes {
 
-  sql_table_name: MARTA_ROUTES ;;
+  sql_table_name: CAP_RPT_DB.LOOKER.MARTA_ROUTES ;;
+
 
   dimension: objectid {
     type: number

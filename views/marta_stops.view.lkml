@@ -1,6 +1,6 @@
 view: marta_stops {
 
-  sql_table_name: MARTA_STOPS ;;
+  sql_table_name: CAP_RPT_DB.LOOKER.MARTA_STOPS ;;
 
   dimension: objectid {
     type: number
